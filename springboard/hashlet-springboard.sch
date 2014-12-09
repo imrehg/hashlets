@@ -30,13 +30,14 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:crypto
+LIBS:hashlet-springboard-cache
 EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Hashlet for VIA Springboard"
-Date "16 nov 2014"
+Date "9 dec 2014"
 Rev "1"
 Comp "Gergely Imreh / Moonpunch"
 Comment1 "CC-BY-SA 3.0"
@@ -64,17 +65,6 @@ F 1 "ATSHA204A" H 5600 4400 60  0000 C CNN
 F 2 "~" H 5650 4800 60  0000 C CNN
 F 3 "~" H 5650 4800 60  0000 C CNN
 	1    5650 4800
-	1    0    0    -1  
-$EndComp
-$Comp
-L CONN_3 K1
-U 1 1 5468604F
-P 7800 4750
-F 0 "K1" V 7750 4750 50  0000 C CNN
-F 1 "CONN_3" V 7850 4750 40  0000 C CNN
-F 2 "~" H 7800 4750 60  0000 C CNN
-F 3 "~" H 7800 4750 60  0000 C CNN
-	1    7800 4750
 	1    0    0    -1  
 $EndComp
 NoConn ~ 3950 5000
@@ -110,10 +100,10 @@ I2C0SDA
 Text Label 7450 4850 2    60   ~ 0
 I2C0SCL
 $Comp
-L PWR_FLAG #FLG01
+L PWR_FLAG #FLG1
 U 1 1 546861FB
 P 3150 4500
-F 0 "#FLG01" H 3150 4595 30  0001 C CNN
+F 0 "#FLG1" H 3150 4595 30  0001 C CNN
 F 1 "PWR_FLAG" H 3150 4680 30  0000 C CNN
 F 2 "" H 3150 4500 60  0000 C CNN
 F 3 "" H 3150 4500 60  0000 C CNN
@@ -121,10 +111,10 @@ F 3 "" H 3150 4500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR02
+L GND #PWR1
 U 1 1 5468620A
 P 3400 5550
-F 0 "#PWR02" H 3400 5550 30  0001 C CNN
+F 0 "#PWR1" H 3400 5550 30  0001 C CNN
 F 1 "GND" H 3400 5480 30  0001 C CNN
 F 2 "" H 3400 5550 60  0000 C CNN
 F 3 "" H 3400 5550 60  0000 C CNN
@@ -132,10 +122,10 @@ F 3 "" H 3400 5550 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG03
+L PWR_FLAG #FLG2
 U 1 1 54686219
 P 3550 5500
-F 0 "#FLG03" H 3550 5595 30  0001 C CNN
+F 0 "#FLG2" H 3550 5595 30  0001 C CNN
 F 1 "PWR_FLAG" H 3550 5680 30  0000 C CNN
 F 2 "" H 3550 5500 60  0000 C CNN
 F 3 "" H 3550 5500 60  0000 C CNN
@@ -150,4 +140,17 @@ Text Label 3550 5500 0    60   ~ 0
 GND
 Text Notes 2950 6950 0    60   ~ 0
 Based on Cryptotronix's version of the original Hashlet\nSee source at https://github.com/cryptotronix/hashlet
+$Comp
+L CONN_4 P2
+U 1 1 54871099
+P 7800 4800
+F 0 "P2" V 7750 4800 50  0000 C CNN
+F 1 "CONN_4" V 7850 4800 50  0000 C CNN
+F 2 "~" H 7800 4800 60  0000 C CNN
+F 3 "~" H 7800 4800 60  0000 C CNN
+	1    7800 4800
+	1    0    0    -1  
+$EndComp
+Text Label 7450 4950 2    60   ~ 0
+VCC33
 $EndSCHEMATC
