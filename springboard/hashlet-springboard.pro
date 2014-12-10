@@ -1,6 +1,6 @@
-update=Wed 10 Dec 2014 12:20:13 AM CST
+update=Wed 10 Dec 2014 10:47:09 AM CST
 version=1
-last_client=pcbnew
+last_client=kicad
 [eeschema]
 version=1
 LibDir=
@@ -46,8 +46,6 @@ version=1
 NetIExt=net
 [cvpcb/libraries]
 EquName1=devcms
-[general]
-version=1
 [pcbnew]
 version=1
 LastNetListRead=hashlet-springboard.net
@@ -88,3 +86,5 @@ LibName16=valves
 LibName17=EssentialLibrary
 LibName18=Logo
 LibName19=OSHW
+[general]
+version=1
