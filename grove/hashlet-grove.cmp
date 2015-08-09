@@ -1,0 +1,17 @@
+Cmp-Mod V01 Created by CvPcb (2013-may-18)-stable date = Sun 09 Aug 2015 03:17:04 PM CST
+
+BeginCmp
+TimeStamp = /55C6ED69;
+Reference = P1;
+ValeurCmp = TWIG_2.0;
+IdModule  = TWIG_2.0;
+EndCmp
+
+BeginCmp
+TimeStamp = /54685FEC;
+Reference = U1;
+ValeurCmp = ATSHA204A;
+IdModule  = so-8;
+EndCmp
+
+EndListe
