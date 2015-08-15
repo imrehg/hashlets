@@ -1,20 +1,16 @@
 (export (version D)
   (design
     (source /home/greg/moonpunch/electronics/hashlets/grove/hashlet-grove.sch)
-    (date "Sun 09 Aug 2015 03:22:24 PM CST")
+    (date "Sat 15 Aug 2015 04:54:28 PM CST")
     (tool "eeschema (2013-may-18)-stable"))
   (components
     (comp (ref U1)
-      (value ATSHA204A)
+      (value ATcrypto)
       (footprint so-8)
-      (datasheet http://www.atmel.com/Images/Atmel-8885-CryptoAuth-ATSHA204A-Datasheet.pdf)
+      (datasheet http://www.atmel.com/products/security-ics/cryptoauthentication/default.aspx)
       (fields
         (field (name MFN) Atmel)
-        (field (name MFP) ATSHA204A-SSHDA-T)
-        (field (name S1PN) 556-ATSHA204A-SSHDAT)
-        (field (name S1PL) https://www.mouser.tw/Search/ProductDetail.aspx?R=ATSHA204A-SSHDA-Tvirtualkey55660000virtualkey556-ATSHA204A-SSHDAT)
-        (field (name S2PN) ATSHA204A-SSHDA-TCT-ND)
-        (field (name S2PL) http://www.digikey.com/product-detail/en/ATSHA204A-SSHDA-T/ATSHA204A-SSHDA-TCT-ND/4814556))
+        (field (name MFPN) "ATSHA204A / ATAES132A / ATECC508A"))
       (libsource (lib crypto) (part ATSHA204A))
       (sheetpath (names /) (tstamps /))
       (tstamp 54685FEC))
@@ -25,6 +21,7 @@
       (fields
         (field (name MFN) Taifeng)
         (field (name MFPN) 1125S-4P)
+        (field (name S1N) Seeed)
         (field (name S1PN) 320110033)
         (field (name S1L) http://www.seeedstudio.com/depot/index.php?main_page=opl_info&opl_id=4))
       (libsource (lib conn) (part CONN_4))
